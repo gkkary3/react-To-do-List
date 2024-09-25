@@ -10,30 +10,31 @@ export default function SideBar({
     setprojectSelectedData(selectedProject);
   }
 
-  let title = projectData.map((project) => (
+  const title = projectData.map((project) => (
     <li key={project.id}>
       <button
         onClick={() => handleProjectClick(project.id)}
-        className="w-full px-2 py-1 my-1 text-left rounded-sm text-stone-400 hover:text-stone-200 hover:bg-stone-800"
+        className="w-full px-2 py-2 my-1 text-left text-gray-800 transition duration-200 rounded-md hover:text-white hover:bg-blue-500"
       >
         {project.title}
       </button>
     </li>
   ));
+
   return (
-    <aside className="w-1/3 px-8 py-16 bg-stone-900 text-stone-50 md:w-72 rounded-r-xl">
-      <h2 className="mb-8 font-bold uppercase md:text-xl text-stone-200">
-        Your Projects
+    <aside className="w-full p-6 text-gray-800 bg-white shadow-lg rounded-xl md:w-1/3">
+      <h2 className="mb-6 text-lg font-bold text-center uppercase md:text-xl md:text-left">
+        프로젝트 목록
       </h2>
-      <div>
+      <div className="flex justify-center mb-4 md:justify-start">
         <button
           onClick={() => onClick(true, false)}
-          className="px-4 py-2 text-xs rounded-md md:text-base bg-stone-700 text-stone-400 hover:bg-stone-600 hover:text-stone-100"
+          className="px-6 py-2 text-sm text-white transition duration-200 bg-blue-600 rounded-md hover:bg-blue-700"
         >
-          + Add Project
+          + 새 프로젝트
         </button>
       </div>
-      <ul id="project-list" className="mt-8">
+      <ul id="project-list" className="mt-4">
         {title}
       </ul>
     </aside>

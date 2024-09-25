@@ -1,89 +1,53 @@
 import { useState, useRef } from "react";
 import Input from "./Input.jsx";
 
-export default function NewProject({ onClick, setProjectData }) {
-  //1. local state를 사용한 방법
-  // const [localData, setLocalData] = useState({
-  //   title: "",
-  //   description: "",
-  //   dueDate: "",
-  // });
-
-  // function handleInputChange(e) {
-  //   const { name, value } = e.target;
-  //   setLocalData((prev) => ({
-  //     ...prev,
-  //     [name]: value,
-  //   }));
-  // }
-
-  // function handleSave() {
-  //   setProjectData(localData);
-  //   onClick(false);
-  // }
-
-  //2. useRef()를 이용한 방법
+export default function NewProject({ onClick, projectData, setProjectData }) {
   const titleRef = useRef();
   const desRef = useRef();
   const dateRef = useRef();
 
   function handleSave() {
+    const maxId =
+      projectData.length > 0
+        ? Math.max(...projectData.map((proj) => proj.id))
+        : 0;
     setProjectData((prevData) => [
       ...prevData,
       {
-        id: prevData.length + 1,
+        id: maxId + 1,
         title: titleRef.current.value,
         description: desRef.current.value,
         dueDate: dateRef.current.value,
+        tasks: [],
       },
     ]);
     onClick(false, false);
   }
 
   return (
-    <div className="w-[35rem] mt-16">
-      <menu className="flex items-center justify-end gap-4 my-4">
+    <div className="w-[35rem] mt-16 bg-white shadow-lg rounded-md p-6">
+      <menu className="flex items-center justify-end gap-4 mb-4">
         <li>
           <button
             onClick={() => onClick(false, false)}
-            className="text-stone-800 hover:text-stone-950"
+            className="text-blue-600 hover:text-blue-800"
           >
-            Cancel
+            취소
           </button>
         </li>
         <li>
           <button
             onClick={handleSave}
-            className="px-6 py-2 rounded-md bg-stone-800 text-stone-50 hover:bg-stone-950"
+            className="px-6 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700"
           >
-            Save
+            저장
           </button>
         </li>
       </menu>
       <div>
-        <Input
-          name="title"
-          label="Title"
-          ref={titleRef}
-          // value={localData.title}
-          // onChange={handleInputChange}
-        />
-        <Input
-          name="description"
-          label="Description"
-          textarea
-          ref={desRef}
-          // value={localData.description}
-          // onChange={handleInputChange}
-        />
-        <Input
-          name="dueDate"
-          label="Due Date"
-          type="date"
-          ref={dateRef}
-          // value={localData.dueDate}
-          // onChange={handleInputChange}
-        />
+        <Input name="title" label="제목" ref={titleRef} />
+        <Input name="description" label="설명" textarea ref={desRef} />
+        <Input name="dueDate" label="마감일" type="date" ref={dateRef} />
       </div>
     </div>
   );

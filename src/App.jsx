@@ -37,6 +37,7 @@ function App() {
           projectData={projectSelectedData}
           onClick={newProejctClick}
           delProejct={delProejct}
+          setProjectData={setProjectData}
         />
       ) : // projectClick이 false일 때 기존 NewProject 또는 NotProject 컴포넌트 표시
       !project ? (
