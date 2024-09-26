@@ -9,7 +9,7 @@
 
 ## 사용된 기술
 
-- **React Hooks**: `useState`, `useRef`, `useContext`를 사용하여 상태 관리와 데이터 참조를 처리
+- **React Hooks**: `useState`, `useRef`, `useEffect`를 사용하여 상태 관리와 데이터 참조를 처리
 - **Tailwind CSS**: UI 스타일링을 Tailwind CSS로 구현
 - **LocalStorage**: 앞으로 구현할 기능에서 프로젝트 데이터와 사용자 이름을 LocalStorage에 저장할 예정
 
@@ -27,7 +27,7 @@
 3. **React Hooks**  
    - `useState`: 프로젝트와 Task 상태 관리
    - `useRef`: 폼 입력 처리
-   - `useContext`: 데이터 공유 및 전역 상태 관리
+   - `useEffect`: 컴포넌트의 생명주기 및 데이터 저장 관리
 
 4. **Tailwind CSS를 이용한 스타일링**  
    - 모든 컴포넌트의 UI는 Tailwind CSS로 구현하였습니다.
@@ -53,4 +53,4 @@
 
 ### 1. 프로젝트 클론
 ```bash
-git clone https://github.com/gkkary3/react-To-do-List.git
+git clone https://github.com/your-username/project-management-app.git
