@@ -53,4 +53,4 @@
 
 ### 1. 프로젝트 클론
 ```bash
-git clone https://github.com/your-username/project-management-app.git
+git clone https://github.com/gkkary3/react-To-do-List.git
