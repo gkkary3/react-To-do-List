@@ -47,7 +47,7 @@
 ![Project Screenshot](./path-to-your-screenshot.png)
 
 ## 프로젝트 링크
-- [GitHub Repository](https://github.com/your-username/project-management-app)
+- [프로젝트 관리 앱 링크](https://gkkary3.github.io/react-To-do-List/)
 
 ## 설치 및 실행 방법
 
