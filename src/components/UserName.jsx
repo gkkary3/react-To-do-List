@@ -2,7 +2,7 @@ import React, { useEffect, useState, forwardRef } from "react";
 import Input from "./Input.jsx";
 
 const UserName = forwardRef(function UserName({ onClick, inputError }, ref) {
-  const fullText = "자신만의 프로젝트를 완성하세요.";
+  const fullText = "자신신만의 프로젝트를 완성하세요.";
   const [typedText, setTypedText] = useState("");
 
   useEffect(() => {
