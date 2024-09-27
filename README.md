@@ -1,4 +1,4 @@
-# Project Management Web Application
+# 프로젝트 관리 웹 애플리케이션
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2000ad33-dc30-4797-8b45-3635dd560cd4" alt="userName" width="250"/>
