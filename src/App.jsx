@@ -50,6 +50,7 @@ function App() {
     setTimeout(() => {
       setShowWelcomeMessage(false);
     }, 2000);
+    setInputError(false);
   }
 
   return (
@@ -94,6 +95,8 @@ function App() {
                   onClick={newProejctClick}
                   projectData={projectData}
                   setProjectData={setProjectData}
+                  inputError={inputError}
+                  setInputError={setInputError}
                 />
               )}
             </div>

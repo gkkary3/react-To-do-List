@@ -1,12 +1,17 @@
 import { useRef } from "react";
 import Input from "./Input.jsx";
 
-export default function NewProject({ onClick, projectData, setProjectData }) {
+export default function NewProject({ onClick, projectData, setProjectData, inputError, setInputError }) {
   const titleRef = useRef();
   const desRef = useRef();
   const dateRef = useRef();
 
   function handleSave() {
+    if(titleRef.current.value.length === 0){
+      setInputError(true);
+      return;
+    }
+
     const maxId =
       projectData.length > 0
         ? Math.max(...projectData.map((proj) => proj.id))
@@ -22,6 +27,7 @@ export default function NewProject({ onClick, projectData, setProjectData }) {
       },
     ]);
     onClick(false, false);
+    setInputError(false);
   }
 
   return (
@@ -42,7 +48,12 @@ export default function NewProject({ onClick, projectData, setProjectData }) {
           </button>
         </menu>
         <div>
-          <Input name="title" label="제목" ref={titleRef} />
+          <Input name="title" label="제목" ref={titleRef}         
+          className={`${
+          inputError
+            ? "border-red-500 bg-red-100 bg-opacity-50" // 에러 시 스타일
+            : "border-blue-300 bg-slate-200"
+        }`}/>
           <Input name="description" label="설명" textarea ref={desRef} />
           <Input name="dueDate" label="마감일" type="date" ref={dateRef} />
         </div>
