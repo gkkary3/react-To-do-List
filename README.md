@@ -1,9 +1,16 @@
 # Project Management Web Application
-![userName](https://github.com/user-attachments/assets/2000ad33-dc30-4797-8b45-3635dd560cd4)
-![welcome](https://github.com/user-attachments/assets/a92b7fe7-8bac-4db6-8d08-2a974208179f)
-![notSelectedProject](https://github.com/user-attachments/assets/d385f845-5621-4b95-a13a-022eaa3e1789)
-![newProject](https://github.com/user-attachments/assets/653d67dc-4f9b-40dc-89c6-7bc6c45fd5d4)
-![detaildProject](https://github.com/user-attachments/assets/aa32994a-de9f-4d0e-ba6a-1e05f288f27b)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2000ad33-dc30-4797-8b45-3635dd560cd4" alt="userName" width="250"/>
+  <img src="https://github.com/user-attachments/assets/a92b7fe7-8bac-4db6-8d08-2a974208179f" alt="welcome" width="250"/>
+  <img src="https://github.com/user-attachments/assets/d385f845-5621-4b95-a13a-022eaa3e1789" alt="notSelectedProject" width="250"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/653d67dc-4f9b-40dc-89c6-7bc6c45fd5d4" alt="newProject" width="250"/>
+  <img src="https://github.com/user-attachments/assets/aa32994a-de9f-4d0e-ba6a-1e05f288f27b" alt="detaildProject" width="250"/>
+</p>
+
 
 
 ## 프로젝트 소개
