@@ -1,6 +1,10 @@
 # Project Management Web Application
+![userName](https://github.com/user-attachments/assets/2000ad33-dc30-4797-8b45-3635dd560cd4)
+![welcome](https://github.com/user-attachments/assets/a92b7fe7-8bac-4db6-8d08-2a974208179f)
+![notSelectedProject](https://github.com/user-attachments/assets/d385f845-5621-4b95-a13a-022eaa3e1789)
+![newProject](https://github.com/user-attachments/assets/653d67dc-4f9b-40dc-89c6-7bc6c45fd5d4)
+![detaildProject](https://github.com/user-attachments/assets/aa32994a-de9f-4d0e-ba6a-1e05f288f27b)
 
-![Project Screenshot](./path-to-your-screenshot.png)
 
 ## 프로젝트 소개
 이 프로젝트는 사용자가 여러 프로젝트를 생성하고 관리할 수 있는 웹 애플리케이션입니다. 프로젝트를 추가할 때 제목, 내용, 마감일을 설정할 수 있으며, 추가된 프로젝트들은 좌측 메뉴에 리스트로 나타납니다. 프로젝트 리스트 중 하나를 클릭하면 해당 프로젝트의 상세 화면으로 이동하며, 기본적으로 작성한 제목, 내용, 마감일이 표시됩니다.
