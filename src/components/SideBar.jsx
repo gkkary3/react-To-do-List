@@ -53,7 +53,7 @@ export default function SideBar({
       </div>
 
       {/* 프로젝트 목록 리스트 */}
-      <ul id="project-list" className="mt-4">
+      <ul id="project-list" className="mt-4 max-h-64 overflow-y-auto">
         {title}
       </ul>
     </aside>

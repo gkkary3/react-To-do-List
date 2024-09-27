@@ -25,10 +25,9 @@ export default function NewProject({ onClick, projectData, setProjectData }) {
   }
 
   return (
-    <div className="flex justify-center w-full mt-16">
-      <div className="w-full max-w-md p-6 bg-white rounded-md shadow-lg">
-        {/* Menu with buttons aligned properly */}
-        <menu className="flex items-center justify-between mb-4">
+    <div className="flex justify-center items-center w-full h-auto min-h-[300px] md:h-screen md:mt-0">
+      <div className="w-full max-w-lg p-6 bg-white rounded-lg shadow-lg">
+        <menu className="flex items-center justify-between mb-4 ">
           <button
             onClick={() => onClick(false, false)}
             className="text-blue-600 hover:text-blue-800"

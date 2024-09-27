@@ -3,7 +3,7 @@ import NewProject from "./components/NewProject";
 import NotProject from "./components/NotProject";
 import UserName from "./components/UserName";
 import DetaildProject from "./components/DetaildProject";
-import SideBar from "./components/sideBar";
+import SideBar from "./components/SideBar";
 
 function App() {
   const [project, setProject] = useState(false);

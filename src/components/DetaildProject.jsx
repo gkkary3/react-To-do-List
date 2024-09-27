@@ -7,11 +7,8 @@ export default function DetaildProject({
   setProjectData,
 }) {
   const taskRef = useRef();
-
-  // Task state management
   const [tasks, setTasks] = useState([]);
 
-  // Reset tasks state whenever projectData changes
   useEffect(() => {
     if (projectData.tasks) {
       setTasks(projectData.tasks);
@@ -20,7 +17,7 @@ export default function DetaildProject({
 
   function handleTask() {
     const newTask = taskRef.current.value;
-    if (newTask.trim() === "") return; // Avoid adding empty tasks
+    if (newTask.trim() === "") return;
     setTasks((prevTasks) => [...prevTasks, newTask]);
     setProjectData((prevData) =>
       prevData.map((proj) =>
@@ -29,15 +26,12 @@ export default function DetaildProject({
           : proj
       )
     );
-    // Clear input field
     taskRef.current.value = "";
   }
 
   function delTask(index) {
     const updatedTasks = tasks.filter((_, taskIndex) => taskIndex !== index);
     setTasks(updatedTasks);
-
-    // Update projectData's tasks
     setProjectData((prevData) =>
       prevData.map((proj) =>
         proj.id === projectData.id ? { ...proj, tasks: updatedTasks } : proj
@@ -58,8 +52,8 @@ export default function DetaildProject({
   ));
 
   return (
-    <div className="flex justify-center w-full mt-16">
-      <div className="w-full max-w-md p-6 bg-white rounded-lg shadow-lg">
+    <div className="flex justify-center items-center w-full h-auto min-h-[300px] md:h-screen md:mt-0">
+      <div className="w-full max-w-lg p-6 bg-white rounded-lg shadow-lg">
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-xl font-bold text-gray-800">
             {projectData.title}
@@ -73,7 +67,6 @@ export default function DetaildProject({
         </div>
         <p className="text-gray-600">{projectData.dueDate}</p>
         <pre className="mt-2 text-gray-600">{projectData.description}</pre>
-        <br />
         <div>
           <h1 className="mt-4 mb-2 text-lg font-semibold text-gray-800">
             업무
@@ -87,7 +80,7 @@ export default function DetaildProject({
               추가
             </button>
           </div>
-          <ul className="mt-2">{tasksHTML}</ul>
+          <ul className="mt-2 max-h-36 overflow-y-auto">{tasksHTML}</ul>
         </div>
       </div>
     </div>
