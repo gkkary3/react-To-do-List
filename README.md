@@ -1,7 +1,7 @@
 # 프로젝트 관리 웹 애플리케이션
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/84651ba8-f88b-4356-a9d7-c682aa3a50e4" alt="userName" width="250"/>
+  <img src="https://github.com/user-attachments/assets/af8b5999-0c3f-4eaf-a9b8-290bb4fcdbc0" alt="userName" width="250"/>
   <img src="https://github.com/user-attachments/assets/0606ae7a-2181-4a43-bf6e-07b5792d4426" alt="welcome" width="250"/>
 </p>
 
