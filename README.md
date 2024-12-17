@@ -1,14 +1,14 @@
 # 프로젝트 관리 웹 애플리케이션
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/af8b5999-0c3f-4eaf-a9b8-290bb4fcdbc0" alt="userName" width="250"/>
-  <img src="https://github.com/user-attachments/assets/0606ae7a-2181-4a43-bf6e-07b5792d4426" alt="welcome" width="250"/>
+  <img src="https://github.com/user-attachments/assets/af8b5999-0c3f-4eaf-a9b8-290bb4fcdbc0" alt="userName" width="250" height="300"/>
+  <img src="https://github.com/user-attachments/assets/0606ae7a-2181-4a43-bf6e-07b5792d4426" alt="welcome" width="250" height="300"/>
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7bf8cc75-b6f6-47ff-b4bc-9993d092b720" alt="notSelectedProject" width="250"/>
-  <img src="https://github.com/user-attachments/assets/dd53ab67-3a2d-4aee-a414-03585878284a" alt="newProject" width="250"/>
-  <img src="https://github.com/user-attachments/assets/6bce57f1-92eb-4ea2-b6cc-1bfc6860e2d7" alt="detaildProject" width="250"/>
+  <img src="https://github.com/user-attachments/assets/7bf8cc75-b6f6-47ff-b4bc-9993d092b720" alt="notSelectedProject" width="250" height="300"/>
+  <img src="https://github.com/user-attachments/assets/dd53ab67-3a2d-4aee-a414-03585878284a" alt="newProject" width="250" height="300"/>
+  <img src="https://github.com/user-attachments/assets/6bce57f1-92eb-4ea2-b6cc-1bfc6860e2d7" alt="detaildProject" width="250" height="300"/>
 </p>
 
 ## 프로젝트 소개
